@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="feld feld-a">IP CHECK</div>
+    <div class="feld feld-b" id="ip-anzeige">Deine IP erscheint hier</div>
+    <button class="feld feld-c" onclick="ladeIP()">IP anzeigen</button>
+  </div>
+
+  <script>
+    function ladeIP() {
+      fetch('/get-ip')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('ip-anzeige').textContent = "Deine IP: " + data.ip;
+        });
+    }
+  </script>
+</body>
+</html>
