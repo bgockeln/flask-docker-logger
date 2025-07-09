@@ -14,7 +14,7 @@ Es handelt sich um mein erstes Projekt dieser Art. Ich beanspruche daher nicht, 
 Ein grundlegendes Verständnis in den Bereichen Linux, Docker und Python ist jedoch vorhanden und wurde durch das Projekt 
 weiter vertieft.
 
-** Zur Klarstellung: **
+**Zur Klarstellung:**  
 Die HTML- und CSS-Dateien wurden mithilfe von ChatGPT generiert. Da mein Fokus auf Linux und Docker lag, habe ich diesen Teil bewusst abgekürzt. Auch hier verfüge ich jedoch über ein grundlegendes Verständnis. 
 Der übrige Projektcode wurde teilweise mit Unterstützung von ChatGPT erstellt, jedoch zu keiner Zeit per „Copy and Paste“ übernommen.
 
