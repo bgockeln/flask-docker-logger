@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # -r sagt pip das es eine Datei mit Abhängigkeiten einlesen soll. Also eine Liste von Pakten, die installiert werden müssen.
 
 COPY . .
-# Kopiert den gesamten Inhalt des aktuellen Ordner in das Arbeitsverzeichnis im Container.
+# Kopiert den gesamten Inhalt des aktuellen Ordners in das Arbeitsverzeichnis im Container.
 
 EXPOSE 5000
 # Gibt Port 5000 im Container für Netzwerkzugriffe frei.
