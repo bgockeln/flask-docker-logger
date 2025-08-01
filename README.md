@@ -1,35 +1,26 @@
-# Flask Logging Projekt
+Flask Logging Project
 
-Um praktische Erfahrungen im Umgang mit Linux-Servern zu sammeln, habe ich ein kleines Website-Logging-System erstellt.
-Ziel war es, auf einem Linux-Server zwei Docker-Container zu betreiben:
+To gain practical experience with Linux servers, I created a small website logging system.
+The goal was to run two Docker containers on a Linux server:
 
-* Der erste Container enthält eine Website, auf der Besucher ihre IP-Adresse abfragen können.
-* Der zweite Container übernimmt das Logging. Jede Anfrage wird entgegengenommen und mit Zeitstempel in einer .txt-Datei gespeichert.
+* The first container hosts a website where visitors can check their IP address.
+* The second container handles logging. Each request is recorded with a timestamp in a .txt file.
 
-Die Entwicklung erfolgte auf einem virtuellen Ubuntu-Server in VirtualBox. Später wurde das Projekt zusätzlich auf einem 
-Debian-Server getestet. Die Verbindung zu den Servern erfolgte ausschließlich per SSH über ein WSL-Debian-Terminal unter Windows. 
-Der gesamte Prozess lief bewusst nur im Terminal ab, um möglichst realitätsnahe Serveradministration zu üben.
+Development was done on a virtual Ubuntu server in VirtualBox. Later, the project was also tested on a Debian server.
+All connections to the servers were made exclusively via SSH from a WSL-Debian terminal on Windows.
+The entire process was intentionally carried out in the terminal to simulate realistic server administration as closely as possible.
 
-Es handelt sich um mein erstes Projekt dieser Art. Ich beanspruche daher nicht, jede einzelne Zeile Code vollständig zu verstehen. 
-Ein grundlegendes Verständnis in den Bereichen Linux, Docker und Python ist jedoch vorhanden und wurde durch das Projekt 
-weiter vertieft.
+This is my first project of this kind, so I don’t claim to fully understand every single line of code.
+However, I do have a solid foundational knowledge of Linux, Docker, and Python, which was further deepened through this project.
 
-**Zur Klarstellung:**  
-Die HTML- und CSS-Dateien wurden mithilfe von ChatGPT generiert. Da mein Fokus auf Linux und Docker lag, habe ich diesen Teil bewusst abgekürzt. Auch hier verfüge ich jedoch über ein grundlegendes Verständnis. 
-Der übrige Projektcode wurde teilweise mit Unterstützung von ChatGPT erstellt, jedoch zu keiner Zeit per „Copy and Paste“ übernommen.
+**A note for transparency:**
+The HTML and CSS files were generated with the help of ChatGPT. Since my focus was on Linux and Docker, I kept that part intentionally simple. That said, I still have a basic understanding of front-end development.
+The rest of the project code was partially developed with assistance from ChatGPT, but never copied and pasted directly.
 
----
+## How to use:
+... ... ...
 
-## Verwendete Technologien
-* Python 3.12
-* Flask
+## Technologies: 
+* Python (Flask)
 * Docker
-* HTTP + CSS
-
----
-
-## Quellen
-* [W3Schools](https://www.w3schools.com/)
-* [ChatGPT](https://chatgpt.com/)
-* [geeksforgeeks.org](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/)
-* [Offizielle Python Dokumentation](https://docs.python.org/3/)
+* HTTP/CSS
