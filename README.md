@@ -18,6 +18,7 @@ Development was done on a **virtual Ubuntu server** in VirtualBox and later test
 ### Run with Docker Compose
 ```bash
 docker-compose up --build
+```
 
 ## Screenshots
 **Website:**
