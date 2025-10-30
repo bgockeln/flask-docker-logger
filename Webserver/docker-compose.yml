@@ -1,51 +1,23 @@
 services:
-  web:
-    # Definiert den Service "web", also den Webserver (Flask-App).
-   
+  web:   
     build:
-      context: .
-      # Baut das Docker-Image aus dem aktuellen Verzeichnis. 
-      # Verzeichnis muss ein Dockerfile enthalten.
-      
+      context: . 
     ports:
-      - "5000:5000"
-      # Verbindet Port 5000 des Hosts mit Port 5000 im Container.
-      # So ist die Web-App unter localhost:5000 erreichbar.
-      
+      - "5000:5000"      
     volumes:
       - .:/Webserver
-      # Bindet das aktuelle Projektverzeichnis(Host) in den Containerpfad /Webserver ein.
-      
     working_dir: /Webserver
-      # Setzt das Arbeitsverzeichnis im Container auf /Webserver.
-      # Entspricht dem WORKDIR im Dockerfile.
-
     command: python app.py
-      # Startet den Webserver mit dem Befehl "python app.py".
-
     depends_on:
-      - logger
-      # Stellt sicher, dass der Service "logger" vor dem Webserver gestartet wird.
+      - logger # Ensure logger service starts first
 
   logger:
-    # Definiert den zweiten Service "logger", also das Logging-System (Flask-App).
-
     build:
       context: ../Logger
-      # Baut das Docker-Image für den Logger aus dem Verzeichnis "../Loger".
-      # (relativ zum Verzeichnis, in dem docker-compose.yml liegt).
-
     ports: 
-      - "5001:5001"
-      # Verbindet Port 5001 des Hosts mit Port 5001 im Logger-Container.
-      # Ist somit über localhost:5001 erreichbar.
-    
+      - "5001:5001" 
     volumes:
-      - ../Logger:/Logger
-      # Bindet das Logger-Verzeichnis auf dem Host in /Logger im Container ein.
-    
+      - ../Logger:/Logger    
     working_dir: /Logger
-      # Setzt das Arbeitsverzeichnis im Container auf /Logger.
-    
     command: python logger.py
-      # Startet den Logger mit dem Befehl "python logger.py".
+

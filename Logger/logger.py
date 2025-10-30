@@ -1,30 +1,26 @@
 from flask import Flask, request
-# Flask Komponenten:
-# Flask: erstellt die Webanwendung.
-# request: enthält Informationen zur aktuellen Anfrage (IP in diesem Fall).
-
 import datetime
-# Für Zeistempel beim schreiben der Log-Einträge.
 
 app = Flask(__name__)
-# Erstellt die Flask App.
-# (__name__) ist der Name des aktuellen Moduls.
+
 
 @app.route("/log", methods=["POST"])
-# Route für "/log", akzeptiert nur POST-Anfragen
-
 def log_entry():
-    data = request.json
-    # Holt die gesendeten JSON-Daten aus der Anfrage.
+    """
+    Handle incoming POST requests to /log.
+    Expects JSON data and writes it to logs.txt with a timestamp.
+    """
 
+    data = request.json
+
+    # Append log entry with timestamp
     with open("logs.txt", "a") as f:
         f.write(f"[{datetime.datetime.now()}] {data}\n")
-        # Öffnet und oder erstellt die Datei logs.txt in Anfügemodus.
-        # Schreibt aktuellen Zeitstempel und die empfangenen Daten in eine neue Zeile.
 
+    # Return HTTP 204 (No Content) to confirm successful logging
     return "", 204
-    # Antwortet mit HTTP-Status 204(No Content). Alles ok aber keine Daten zurück.
 
 if __name__ == "__main__":
+    # Run the Flask app on all interfaces (for Docker accessibility)
     app.run(host="0.0.0.0", port=5001)
-    # Startet die Flask-App auf allen Netzwerkinterfaces (0.0.0.0) und Port 5001.
+

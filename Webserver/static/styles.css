@@ -1,4 +1,4 @@
-/* Grundlayout: Zentriert alles */
+/* Layout */
 body, html {
   height: 100%;
   margin: 0;
@@ -9,7 +9,7 @@ body, html {
   justify-content: center;
 }
 
-/* Container-Box */
+/* Container */
 .container {
   background-color: white;
   padding: 30px;
@@ -19,26 +19,26 @@ body, html {
   text-align: center;
 }
 
-/* Gemeinsame Feld-Styles */
+/* Input fields */
 .feld {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 6px;
 }
 
-/* Feld A: Überschrift */
+/* Title */
 .feld-a {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* Feld B: IP-Ausgabe */
+/* IP output */
 .feld-b {
   background-color: #eaeaea;
   font-size: 18px;
 }
 
-/* Feld C: Button */
+/* Button */
 .feld-c {
   background-color: #007bff;
   color: white;

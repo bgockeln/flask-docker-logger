@@ -1,2 +1,2 @@
-flask # Web-Framework für den Aufbau des Servers und der Routen.
-requests # Wird verwendet um HTTP-Anfragen an den Logger zu senden.
+flask 
+requests 
