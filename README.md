@@ -1,6 +1,6 @@
 # Flask Logging Project
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.x-blue)
+![Python](https://img.shields.io/badge/python-3.12-blue)
 
 For German version of this README, see [README_DE.md](README_DE.md)
 
