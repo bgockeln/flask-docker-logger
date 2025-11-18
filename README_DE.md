@@ -1,4 +1,7 @@
 # Flask Logging Projekt
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.x-blue)
+![Last Commit](https://img.shields.io/github/last-commit/USERNAME/REPO)
 
 Dieses Projekt ist ein kleines Website-Logging-System, das ich entwickelt habe, um praktische Erfahrung mit **Linux-Servern, Docker und Python** zu sammeln. Es besteht aus **zwei Docker-Containern**:
 
